@@ -1,0 +1,17 @@
+{
+  "name": "dumbbot",
+  "version": "0.0.1",
+  "dependencies": {
+    "date-fns": "^1.29.0",
+    "fast-xml-parser": "^2.7.4",
+    "ioredis": "^3.1.4",
+    "node-fetch": "^1.7.3",
+    "pino": "^4.7.3",
+    "spotted": "^1.2.6",
+    "xml2js": "^0.4.19"
+  },
+  "scripts": {
+    "prod": "LOG_LEVEL=error pm2 start ./src/bootstrap/ecosystem.config.js",
+    "dev": "LOG_LEVEL=debug node ./src/app.js"
+  }
+}
